@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".UploadIdentification">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/upload_images"
+            tools:ignore="ImageContrastCheck"
+            android:contentDescription="@string/uploaded_image" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp">
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <RadioButton
+                    android:id="@+id/radioButtonIdentification"
+                    android:layout_width="148dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#4E91B7"
+                    android:paddingStart="5dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="@string/identification"
+                    tools:ignore="RtlSymmetry,TouchTargetSizeCheck,TextContrastCheck" />
+
+            </RadioGroup>
+        </TableRow>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/imageNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:textSize="22sp"
+            android:ems="10"
+            android:text="@string/identification"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/identification_upload_msg"
+            android:textColor="@color/red"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_imageUpload"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#4E91B7"
+            android:text="@string/upload_identification"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_Skip"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="#4E91B7"
+            android:text="@string/skip"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>

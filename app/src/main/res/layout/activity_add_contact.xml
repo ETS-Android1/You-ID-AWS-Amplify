@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AddContact">
+
+        <TextView
+            android:id="@+id/textAddContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="35dp"
+            android:gravity="center"
+            android:text="@string/add_contact"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/editTextContactFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/textAddContact"
+            android:layout_marginTop="30dp"
+            android:autofillHints="First Name"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextContactLastName"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/editTextContactFirstName"
+            android:autofillHints="Last Name"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextProfession"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/editTextContactLastName"
+            android:autofillHints="Profession"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:hint="@string/profession"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextContactEmail"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/editTextProfession"
+            android:autofillHints="Email"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextContactPhone"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/editTextContactEmail"
+            android:autofillHints="Phone Number"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextContactAddress"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/editTextContactPhone"
+            android:autofillHints="Address"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/buttonSubmitContactInfo"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextContactPhone"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#4E91B7"
+            android:text="@string/submit"
+            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/return_to_previous_page"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.015"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </RelativeLayout> </ScrollView>

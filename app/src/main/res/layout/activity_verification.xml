@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Verification">
+
+        <TextView
+            android:id="@+id/textEnterVerification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="35dp"
+            android:gravity="center"
+            android:text="@string/enter_verification_code"
+            android:textSize="35sp" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/textEnterVerification"/>
+
+        <EditText
+            android:id="@+id/editTextVerificationCode"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/divider1"
+            android:autofillHints="Verification Code"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/verification_code"
+            android:inputType="number"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/editTextVerificationCode"/>
+
+        <Button
+            android:id="@+id/buttonVerify"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider2"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#4E91B7"
+            android:text="@string/verify_code"
+            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/buttonResend"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@+id/buttonVerify"
+            android:backgroundTint="#4E91B7"
+            android:text="@string/resend_code"
+            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/return_to_previous_page"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </RelativeLayout> </ScrollView>

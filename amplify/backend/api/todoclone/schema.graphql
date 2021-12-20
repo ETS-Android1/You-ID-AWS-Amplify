@@ -1,0 +1,24 @@
+type Contacts @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  firstname: String
+  lastname: String
+  profession: String
+  email: String
+  phone: String
+  address: String
+  type: String
+  completedAt: AWSDateTime
+  userID: ID
+  imageURL: String
+}
+
+type UserInfo @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  firstname: String
+  lastname: String
+  email: String
+  phone: String
+  age: String
+  completedAt: AWSDateTime
+}
+ 

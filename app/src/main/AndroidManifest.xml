@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.you_id_fix">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".AmplifyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/you_id_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/round_you_id"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YouIDFix">
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".IceAddContacts"
+            android:exported="false" />
+        <activity
+            android:name=".ICEActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="false" />
+        <activity
+            android:name=".UploadIdentification"
+            android:exported="false" />
+        <activity
+            android:name=".BucketImageList"
+            android:exported="false" />
+        <activity
+            android:name=".Health"
+            android:exported="false" />
+        <activity
+            android:name=".Legal"
+            android:exported="false" />
+        <activity
+            android:name=".Travel"
+            android:exported="false" />
+        <activity
+            android:name=".Merchant"
+            android:exported="false" />
+        <activity
+            android:name=".SupportLogin"
+            android:exported="false" />
+        <activity
+            android:name=".EditImage"
+            android:exported="false" />
+        <activity
+            android:name=".AddContact"
+            android:exported="false" />
+        <activity
+            android:name=".Upload"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name=".Support"
+            android:exported="true" />
+        <activity
+            android:name=".DisplayContact"
+            android:exported="true" />
+        <activity
+            android:name=".IceDisplayContacts"
+            android:exported="true" />
+        <activity
+            android:name=".IceEditContacts"
+            android:exported="true" />
+        <activity
+            android:name=".FingerprintLogin"
+            android:exported="true" />
+        <activity
+            android:name=".UserSettings"
+            android:exported="true" />
+        <activity
+            android:name=".UploadProfilePicture"
+            android:exported="true" />
+        <activity
+            android:name=".UpdateContact"
+            android:exported="true" />
+        <activity
+            android:name=".ChangeUserInfo"
+            android:exported="true" />
+        <activity
+            android:name=".RecoveryCode"
+            android:exported="true" />
+        <activity
+            android:name=".ConfirmSignUp"
+            android:exported="true" />
+        <activity
+            android:name=".Verification"
+            android:exported="true" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="true" />
+        <activity
+            android:name=".ChangeEmail"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

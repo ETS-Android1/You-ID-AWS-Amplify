@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+    <item android:id="@+id/navHome"
+        android:icon="@drawable/home"
+        android:title="@string/home" />
+
+    <item android:id="@+id/navUpload"
+        android:icon="@drawable/upload_icon"
+        android:title="@string/upload" />
+
+    <item android:id="@+id/navDownload"
+        android:icon="@drawable/download"
+        android:title="@string/download" />
+
+    <item android:id="@+id/navHealth"
+        android:icon="@drawable/health"
+        android:title="@string/health" />
+
+    <item android:id="@+id/navMerchant"
+        android:icon="@drawable/merchant"
+        android:title="@string/merchant" />
+
+    <item android:id="@+id/navLegal"
+        android:icon="@drawable/legal"
+        android:title="@string/legal" />
+
+    <item android:id="@+id/navTravel"
+        android:icon="@drawable/travel"
+        android:title="@string/travel" />
+
+    <item android:id="@+id/navEmergency"
+        android:icon="@drawable/emergency"
+        android:title="@string/emergency" />
+
+    <item android:id="@+id/navSettings"
+        android:icon="@drawable/settings"
+        android:title="@string/settings" />
+
+    <item android:id="@+id/navSupport"
+        android:icon="@drawable/support"
+        android:title="@string/support" />
+
+    <item android:id="@+id/navSignOut"
+        android:icon="@drawable/sign_out"
+        android:title="@string/sign_out" />
+    </group>
+</menu>

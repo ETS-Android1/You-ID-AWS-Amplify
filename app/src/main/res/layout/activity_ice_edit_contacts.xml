@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".IceEditContacts">
+
+
+        <TextView
+            android:id="@+id/textEditContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="35dp"
+            android:gravity="center"
+            android:text="@string/edit_contact"
+            android:textSize="35sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/IV_ContactPic"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/textEditContact"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:src="@drawable/ic_baseline_person_24"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+        <EditText
+            android:id="@+id/etv_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/IV_ContactPic"
+            android:layout_marginTop="30dp"
+            android:autofillHints="First Name"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/etv_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/etv_firstname"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:hint="@string/last_name"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck"
+            android:autofillHints="Last Name"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/etv_title"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/etv_lastname"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:hint="@string/title"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck"
+            android:autofillHints="Title"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/etv_address"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/etv_title"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:hint="@string/address"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck"
+            android:autofillHints="Address"
+            android:inputType="textPostalAddress"/>
+
+        <EditText
+            android:id="@+id/etv_email"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/etv_address"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:hint="@string/email"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck"
+            android:autofillHints="Email"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/etv_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/etv_email"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:hint="@string/phone_number"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck"
+            android:autofillHints="Phone Number"
+            android:inputType="phone"/>
+
+        <Button
+            android:id="@+id/btn_ice_contact_update"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etv_phoneNumber"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#4E91B7"
+            android:text="@string/update"
+            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/btn_ice_contact_upload_new"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etv_phoneNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_toEndOf="@id/btn_ice_contact_update"
+            android:backgroundTint="#4E91B7"
+            android:text="@string/change_picture"
+            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/return_to_previous_page"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </RelativeLayout> </ScrollView>

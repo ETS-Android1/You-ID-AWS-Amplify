@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "todoclone",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authtodocloneb84a4e51",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
