@@ -23,13 +23,7 @@ Backend created using Amazon Web Services AWS Amplify [Cognito, DynamoDB, S3, Am
 <h2> SignIn  - ForgotPassword -  SignOut</h2>
 <div class="row">
   <div class="column">
-    <img src="https://i.ibb.co/smGF0Nr/1.png" alt="SignIn" width="300" height="620">
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/q0hf7wD/2.png" alt="ForgotPassword" width="300" height="620" >
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/VqWW3Jw/3.png" alt="SignUp" width="300" height="620">
+    <img src="https://i.ibb.co/Nt8rXxB/1-Copy.png" alt="SignIn" width="900" height="620">
   </div>
 </div>
 <p style="clear: both;">
@@ -62,13 +56,7 @@ In case of forgot password, user can click on the <b>ForgetPassword</b> option a
 <h2> Health - Travel - Merchant - Legal </h2>
 <div class="row"> 
 <div class="column">
-    <img src="https://i.ibb.co/Y0PSWCd/12.png" alt="Attendance" width="300" height="620">
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/99m4xsg/7.png" alt="EmployeesList" width="300" height="620">
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/gySY7TY/8.png" alt="Attendance" width="300" height="620">
+    <img src="https://i.ibb.co/GRmQn2w/12-Copy.png" alt="Attendance" width="900" height="620">
   </div>
 </div>
 <h3> Categories</h3>
@@ -92,7 +80,7 @@ In case of forgot password, user can click on the <b>ForgetPassword</b> option a
 <h2> ICE - InCaseOfEmergency </h2>
  <div class="row">
   <div class="column">
-    <img src="https://i.ibb.co/VSv7s4d/16.png" alt="Terminate1" width="300" height="620">
+    <img src="https://i.ibb.co/P1KZr88/16.png" alt="ICE" width="300" height="620">
   </div>
 </div>
 <p>This activity has 3 contacts options in case of emergency and an identification document as well as medical documents. </p>
