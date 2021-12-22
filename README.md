@@ -11,7 +11,7 @@
 <div class="info"> <font color="#303030">
 <h2> <b>Introduction</b> </h2>
 <b> [Semester Project] </b> <br>
-An Android Application to keep all your personal and identifiaiton documents handy. Will allow you to upload documetns images and contacts associated with such documetns like Doctor's contact with medical reports, Lawyer's contact with property documents etc.  
+An Android Application to keep all your personal and identification documents handy. Will allow you to upload documents images and contacts associated with such documents like Doctor's contact with medical reports, Lawyer's contact with property documents etc.  
 <br> <br>
 Backend created using Amazon Web Services AWS Amplify [Cognito, DynamoDB, S3, Amplify]  <br>
 <br><br></font></div> 
